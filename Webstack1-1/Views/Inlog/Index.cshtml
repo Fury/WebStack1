@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h1>
+    @ViewBag.Bericht
+</h1>
+<h2>Zelfde Action</h2>
+<form method="get">
+    Email: <input id="email" type="email" name="email" /><br />
+    Mail Client:
+    <select id="myList" name="emailclients">
+        <option value="msOutlook">Microsoft Outlook</option>
+        <option value="outlookExpress">Outlook Express</option>
+        <option value="thunderbird">Thunderbird</option>
+        <option value="other">Other</option>
+    </select><br />
+    Passwoord: <input id="passwoord" type="password" name="passwoord" />
+    <input type="submit" />
+</form>
+
+<h2>Andere Action</h2>
+<form method="get" action="@Url.Action("Signup", "inlog")">
+    Email: <input id=" email" type="email" name="email" /><br />
+    Mail Client:
+    <select id="myList" name="emailclients">
+        <option value="msOutlook">Microsoft Outlook</option>
+        <option value="outlookExpress">Outlook Express</option>
+        <option value="thunderbird">Thunderbird</option>
+        <option value="other">Other</option>
+    </select><br />
+    Passwoord: <input id="passwoord" type="password" name="passwoord" />
+    <input type="submit" />
+</form>
+
+<h2>Andere Controller</h2>
+<form method="get" action="@Url.Action("Index", "Signup")">
+    Email: <input id=" email" type="email" name="email" /><br />
+    Mail Client:
+    <select id="myList" name="emailclients">
+        <option value="msOutlook">Microsoft Outlook</option>
+        <option value="outlookExpress">Outlook Express</option>
+        <option value="thunderbird">Thunderbird</option>
+        <option value="other">Other</option>
+    </select><br />
+    Passwoord: <input id="passwoord" type="password" name="passwoord" />
+    <input type="submit" />
+</form>
+
+<h2>BeginForm</h2>
+
+@using(Html.BeginForm("Index","Signup")) {
+
+    <label>Email: </label>  <input id=" email" type="email" name="email" />
+    <br />
+    <label>EmailClient</label>
+    <select id="myList" name="emailclients">
+        <option value="msOutlook">Microsoft Outlook</option>
+        <option value="outlookExpress">Outlook Express</option>
+        <option value="thunderbird">Thunderbird</option>
+        <option value="other">Other</option>
+    </select><br />
+    
+    <label>Passwoord:</label> <input id="passwoord" type="password" name="passwoord" />
+    
+    <input type="submit" value="Sign up" />
+    
+    }

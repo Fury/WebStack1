@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webstack1-1", "Webstack1-1\Webstack1-1.csproj", "{C6981579-885D-40FE-BF15-7B096983B485}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webstack1-2", "Webstack1-2\Webstack1-2.csproj", "{A5FE71DE-DDAB-42F3-96FF-65A6DEAAF37B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6981579-885D-40FE-BF15-7B096983B485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6981579-885D-40FE-BF15-7B096983B485}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6981579-885D-40FE-BF15-7B096983B485}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6981579-885D-40FE-BF15-7B096983B485}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5FE71DE-DDAB-42F3-96FF-65A6DEAAF37B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5FE71DE-DDAB-42F3-96FF-65A6DEAAF37B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5FE71DE-DDAB-42F3-96FF-65A6DEAAF37B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5FE71DE-DDAB-42F3-96FF-65A6DEAAF37B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
