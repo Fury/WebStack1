@@ -1,0 +1,63 @@
+﻿@using WebStack1_3.Enums
+@model WebStack1_3.Models.Pizza
+
+@{
+    ViewBag.Title = "PizzaAanmaken";
+}
+
+<h2>PizzaAanmaken</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Pizza</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Besteller)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Besteller)
+            @Html.ValidationMessageFor(model => model.Besteller)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NaamPizza)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.NaamPizza)
+            @Html.ValidationMessageFor(model => model.NaamPizza)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ExtraKaas)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ExtraKaas)
+            @Html.ValidationMessageFor(model => model.ExtraKaas)
+        </div>
+        
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Betaal)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownListFor(model => model.Betaal, new SelectList(
+                  new List<Object>{ 
+                       new { value = 0 , text = "Cash"  },
+                       new { value = 1 , text = "Cheque" },
+                       new { value = 2 , text = "Overschrijving"}
+                    },
+                  "value",
+                  "text",
+                   2))
+            @Html.ValidationMessageFor(model => model.ExtraKaas)
+        </div>
+
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}

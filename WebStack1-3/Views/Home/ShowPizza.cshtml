@@ -1,0 +1,39 @@
+﻿@model WebStack1_3.Models.Pizza
+
+@{
+    ViewBag.Title = "showPizza";
+}
+
+<h2>showPizza</h2>
+
+<fieldset>
+    <legend>Pizza</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Besteller)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Besteller)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.NaamPizza)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NaamPizza)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ExtraKaas)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ExtraKaas)
+    </div>
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Betaal)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Betaal)
+    </div>  
+
+</fieldset>
