@@ -30,7 +30,7 @@ namespace Webstack1_2
         protected void Session_End()
         {
 
-            Application["Counter"] = (int)Application["Counter"] + 1;
+            Application["Counter"] = (int)Application["Counter"] - 1;
         }
     }
 }
